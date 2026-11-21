@@ -24,7 +24,7 @@ int main() {
         cin.ignore();
 
         if (pilihan == 1) {
-            cout << "\n--- DAFTAR ALAT LABORATORIUM ---" << endl;
+            cout << "\nDAFTAR ALAT LABORATORIUM" << endl;
             if (daftarAlat.empty()) {
                 cout << "Belum ada data alat." << endl;
             } else {
@@ -44,7 +44,7 @@ int main() {
             cin >> jumlah;
 
             daftarAlat.push_back(AlatLaboratorium(nama, kategori, jumlah));
-            cout << "[INFO] Alat baru berhasil ditambahkan!" << endl;
+            cout << "Alat baru berhasil ditambahkan!" << endl;
 
         } else if (pilihan == 3 || pilihan == 4) {
             if (daftarAlat.empty()) {
@@ -62,7 +62,7 @@ int main() {
             cin >> idx;
 
             if (idx < 1 || idx > (int)daftarAlat.size()) {
-                cout << "[ERROR] Nomor alat tidak valid!" << endl;
+                cout << "Nomor alat tidak valid!" << endl;
             } else {
                 cout << "Masukkan jumlah: ";
                 cin >> jml;
@@ -73,7 +73,7 @@ int main() {
                 }
             }
         } else if (pilihan != 0) {
-            cout << "[ERROR] Pilihan menu tidak tersedia." << endl;
+            cout << "Pilihan menu tidak tersedia." << endl;
         }
 
     } while (pilihan != 0);
